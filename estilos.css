@@ -1,155 +1,556 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.logo-1, .logo-2, .logo-3, .logo-4, .logo-5 {
+  width: 150px;
+  height: 100px;
 }
-body{
-    background-color: rgb(5, 0, 0);
-    margin: 0;
-}
-.links-f{
-    text-align: center;
-    padding-left: 50px;
-    height: 100px;    
-}
-.links-f a {
-    color: whitesmoke;
-}
-.bg-nav{
-    background-color: rgb(5, 0, 0);
-}
-.navbar{
-    padding: 0;
-    
-}
-.navbar-toggler-icon{
-    background-color: rgba(255, 255, 255, 0.288);
-    border-radius: 5px;
-}
-div ul li a{
-    color: whitesmoke;
-    font-size: 20px;
-    text-transform: capitalize;
-    margin: 10px;
-}
-a:hover{
-    transform: scale(1.05);
-    transition: 1s;
-    color: whitesmoke;
 
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.footer-copyright{
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+
+body {
+  background-color: #050000;
+  margin: 0;
 }
-.jumbotron{
-    background-image: url(img/Banner-Arcor.png);
-    background-size: cover;
-    height: 400px;
-    margin: 0;
-    
+
+.bg-nav {
+  background-color: #050000;
 }
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  color: whitesmoke;
+  width: 80px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding-top: 3px;
+}
+
+div ul li a {
+  color: whitesmoke;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: whitesmoke;
+}
+
+.jumbotron {
+  background-image: url(img/Banner-Arcor.png);
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+}
+
 h1 {
-    color: whitesmoke;
-    text-transform: capitalize;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-shadow: black 4px 1px;
-   
-}
-.img-qs{
-    background-image: url(https://www.arcor.com/en/dist/images/og-image.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
-    border-radius: 10px;
-    height: 300px;
-    margin: 30px 0 30px 0;
-
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 150px;
+  text-shadow: black 4px 1px;
 }
 
-.img-nv{
-    background-image: url(https://nexodiario.com/wp-content/uploads/2017/07/Arcor-1024x683.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
-    border-radius: 10px;
-    height: 300px;
-    margin: 30px 0 30px 0;
-    
+.adm {
+  color: whitesmoke;
+  text-shadow: black 4px 1px;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
 }
 
-.img-nm{
-    background-image: url(https://www.arcor.com/es/dist/images/rrhh/rrhh_pic_card.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0;
-    border-radius: 10px;
-    height: 300px;
-    margin: 30px 0 30px 0;
+.img-qs {
+  background-image: url(https://www.arcor.com/en/dist/images/og-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  border-radius: 10px;
+  height: 350px;
+  margin: 30px 0 30px 0;
 }
-.text-qs, .text-nv,.text-nm{
-    background-color: rgba(0, 0, 0, 0.377);
-    color: whitesmoke;
-    text-transform: capitalize;
+
+.img-nv {
+  background-image: url(https://nexodiario.com/wp-content/uploads/2017/07/Arcor-1024x683.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  border-radius: 10px;
+  height: 350px;
+  margin: 30px 0 30px 0;
+}
+
+.img-nm {
+  background-image: url(https://www.arcor.com/es/dist/images/rrhh/rrhh_pic_card.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  border-radius: 10px;
+  height: 350px;
+  margin: 30px 0 30px 0;
+}
+
+.text-qs, .text-nv, .text-nm {
+  background-color: rgba(0, 0, 0, 0.377);
+  color: whitesmoke;
+  text-transform: capitalize;
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;
+  text-align: center;
+  padding: 200px 30px 0 30px;
+}
+
+.text-qs:hover, .text-nv:hover, .text-nm:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.my-5 {
+  background-color: rgba(245, 245, 245, 0.597);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+.h3-c {
+  padding: 50px 0 30px 0;
+}
+
+.btn {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  color: whitesmoke;
+  -webkit-transform: none;
+          transform: none;
+}
+
+h2 {
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 50px;
+  font-size: 20px;
+}
+
+.map {
+  text-align: center;
+}
+
+iframe {
+  width: 70%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.container-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+
+.container-logos div {
+  margin: 0;
+}
+
+.h2-logos {
+  color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-1 {
+  background-image: url(./img/footer1.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-2 {
+  background-image: url(./img/footer2.png);
+  background-size: 120px;
+  background-position: center;
+}
+
+.logo-3 {
+  background-image: url(img/footer5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-4 {
+  background-image: url(./img/footer3.png);
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-5 {
+  background-image: url(./img/footer4.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-1:hover, .logo-2:hover, .logo-3:hover, .logo-4:hover, .logo-5:hover {
+  -webkit-transform: scale(1.3) rotate(360deg);
+          transform: scale(1.3) rotate(360deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+  margin: 0 40px;
+}
+
+.links-f a {
+  color: grey;
+}
+
+.ins-ic:hover, .fb-ic:hover, .li-ic:hover, .tw-ic:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: whitesmoke;
+}
+
+.footer-copyright p {
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.imgs-1 {
+  background-image: url(./img/venta.jpg);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+
+.imgs-2 {
+  background-image: url(./img/promocion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+
+.imgs-3 {
+  background-image: url(./img/entrega.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+
+.texts-1, .texts-2, .texts-3 {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  display: block;
+  float: right;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 80px;
+}
+
+.h3prod {
+  color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 50px;
+}
+
+.h3serv {
+  color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 50px 100px 100px 100px;
+}
+
+hr {
+  background-color: whitesmoke;
+  margin: 0 200px 30px 200px;
+}
+
+.textprod-1, .textprod-2, .textprod-3, .textprod-4, .textprod-5 {
+  color: whitesmoke;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  float: left;
+  padding-top: 80px;
+}
+
+.imgprod-1 {
+  background-image: url(./img/pic_alimentos.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.imgprod-2 {
+  background-image: url(./img/pic_galletas2.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.imgprod-3 {
+  background-image: url(./img/pic_golosinas.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.imgprod-4 {
+  background-image: url(./img/pic_chocolates.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.imgprod-5 {
+  background-image: url(./img/pic_helados2.jpg);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+  .h3prod {
     width: 100%;
-    border-radius: 10px;
-    height: 300px;
-    text-align: center;
-    padding: 100px 30px 0 30px ;
-
-
-}
-h3:hover, p:hover{
-    transform: scale(1.05);
-    transition: 1s;
-}
-.container-f{
-    height: 100px;
-}
-.my-5{
-    background-color: whitesmoke;
-    margin: 20px;
-    border-radius: 10px;
+    margin: 0;
     padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
+  }
+  .container-prod {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .container-prod div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 30px;
+  }
+  .h3serv {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .container-serv {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .container-serv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    margin: 0;
+  }
+  .container-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .container-index div {
+    padding-top: 0;
+  }
+  .container-index .text-qs, .container-index .text-nv, .container-index .text-nm {
+    padding-top: 100px;
+  }
 }
-.btn{
-    background-color: black;
-    color: whitesmoke;
-}
-.btn:hover{
-    color: white;
-    transform: none;
-}
-h2{
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    text-transform: capitalize;
+
+@media only screen and (min-width: 1280px) {
+  .container-serv div {
     margin: 50px;
-    font-size: 20px;
-    
-}
-.map{
-    text-align: center;
-}
-iframe{
-    width: 70%;
-    height: 350px;
-    border-radius: 10px;
-
+  }
+  .container-prod div {
+    margin: 100px;
+  }
 }
 
-.logos-f:hover {
-    transform:scale(1.05);
-    transition: 1s;
+@media only screen and (min-width: 791px) and (max-width: 1308px) {
+  .container-serv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .container-serv div {
+    width: 500px;
+  }
+  .container-prod {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .container-prod div {
+    width: 500px;
+  }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .page-footer {
+    font-size: 7px;
+  }
+  .page-footer p {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+    background-color: black;
+    background-image: url(img/logo-grupo-arcor.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .jumbotron h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 200px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
