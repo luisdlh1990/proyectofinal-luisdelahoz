@@ -39,7 +39,7 @@ About to write to C:\Users\luis\Desktop\coderhouse\proyecto final\package.json:
   "author": "luis de la hoz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luisdlh1990/proyectofinal-luisdelahoz/issues"
+    "url": "https://github.com/luisdlh1990/proyectofinal-luisdelahoz/"
   },
-  "homepage": "https://github.com/luisdlh1990/proyectofinal-luisdelahoz#readme"
+  "homepage": "https://luisdlh1990.github.io/proyectofinal-luisdelahoz/"
 }
