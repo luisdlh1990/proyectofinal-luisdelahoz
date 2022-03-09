@@ -20,9 +20,8 @@ $estilos:(
     border:10px,
 );
 .adm:hover, h1:hover{
-    transform: scalex(1.1);
     transform:rotatex(360deg);
-    transition: 1s;
+    transition: 2s;
 }
 *{
     padding: 0;
@@ -52,12 +51,14 @@ div ul li a{
     color: $color1;
     font-size: map-get($estilos,font);
     text-transform: capitalize;
-    margin: 10px;
+    margin: 20px;
 }
 a:hover{
     transform: scale(1.05);
     transition: 1s;
     color: $color1;
+    border-bottom: 1px groove $color1;
+    
 
 }
 .jumbotron{
@@ -376,7 +377,11 @@ h3{
         margin: 0;
         padding: 20px;
     }
-
+    ul li a:hover{
+        transform: none;
+        color: rgba(255, 255, 255, 0.527);
+        transition: 1s;
+    }
     .container-logos{
         display: flex;
         flex-direction: column;
@@ -396,21 +401,26 @@ h3{
 @media only screen and (min-width: 1280px){
 
     .container-prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         div{
             margin: 100px;
         }
     }
 }
-@media only screen and (min-width: 791px) and (max-width: 1308px){
+@media only screen and (min-width: 791px) and (max-width: 1900px){
 
 
     .container-prod{
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         div{
-            width: 500px;
+            width: 700px;
+            height: 300px;
+            margin: 50px;
         }
     }
 
