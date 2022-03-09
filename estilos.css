@@ -4,12 +4,10 @@
 }
 
 .adm:hover, h1:hover {
-  -webkit-transform: scalex(1.1);
-          transform: scalex(1.1);
   -webkit-transform: rotatex(360deg);
           transform: rotatex(360deg);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 * {
@@ -45,7 +43,7 @@ div ul li a {
   color: whitesmoke;
   font-size: 20px;
   text-transform: capitalize;
-  margin: 10px;
+  margin: 20px;
 }
 
 a:hover {
@@ -54,6 +52,7 @@ a:hover {
   -webkit-transition: 1s;
   transition: 1s;
   color: whitesmoke;
+  border-bottom: 1px groove whitesmoke;
 }
 
 .jumbotron {
@@ -438,6 +437,13 @@ h3 {
     margin: 0;
     padding: 20px;
   }
+  ul li a:hover {
+    -webkit-transform: none;
+            transform: none;
+    color: rgba(255, 255, 255, 0.527);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
   .container-logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -461,16 +467,28 @@ h3 {
 }
 
 @media only screen and (min-width: 1280px) {
+  .container-prod {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .container-prod div {
     margin: 100px;
   }
 }
 
-@media only screen and (min-width: 791px) and (max-width: 1308px) {
+@media only screen and (min-width: 791px) and (max-width: 1900px) {
   .container-prod {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -481,7 +499,9 @@ h3 {
     width: 100%;
   }
   .container-prod div {
-    width: 500px;
+    width: 700px;
+    height: 300px;
+    margin: 50px;
   }
 }
 
