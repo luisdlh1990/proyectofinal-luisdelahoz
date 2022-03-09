@@ -52,7 +52,6 @@ a:hover {
   -webkit-transition: 1s;
   transition: 1s;
   color: whitesmoke;
-  border-bottom: 1px groove whitesmoke;
 }
 
 .jumbotron {
@@ -511,6 +510,13 @@ h3 {
   }
   .page-footer p {
     font-size: 7px;
+  }
+  ul li a:hover {
+    -webkit-transform: none;
+            transform: none;
+    color: rgba(255, 255, 255, 0.527);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 

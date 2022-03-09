@@ -57,7 +57,6 @@ a:hover{
     transform: scale(1.05);
     transition: 1s;
     color: $color1;
-    border-bottom: 1px groove $color1;
     
 
 }
@@ -431,6 +430,11 @@ h3{
         p{
             font-size: 7px;
         }
+    }
+    ul li a:hover{
+        transform: none;
+        color: rgba(255, 255, 255, 0.527);
+        transition: 1s;
     }
 }
 @media only screen and (max-width: 767px){
