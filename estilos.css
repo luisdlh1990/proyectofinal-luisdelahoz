@@ -3,11 +3,11 @@
   height: 100px;
 }
 
-.adm:hover, h1:hover {
-  -webkit-transform: rotatex(360deg);
-          transform: rotatex(360deg);
-  -webkit-transition: 2s;
-  transition: 2s;
+.adm:hover {
+  -webkit-transform: rotatex(720deg);
+          transform: rotatex(720deg);
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 * {
@@ -49,8 +49,8 @@ div ul li a {
 a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: whitesmoke;
 }
 
@@ -121,7 +121,7 @@ h1 {
 }
 
 .text-qs, .text-nv, .text-nm {
-  background-color: rgba(0, 0, 0, 0.432);
+  background-color: rgba(0, 0, 0, 0.678);
   color: whitesmoke;
   text-transform: capitalize;
   width: 100%;
@@ -310,18 +310,14 @@ footer {
   padding: 10px;
 }
 
-.s-1:hover, .s-2:hover, .s-3:hover {
+.text-s:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.h3prod {
-  color: whitesmoke;
-  text-align: center;
-  text-transform: capitalize;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.container-serv {
   margin: 50px;
 }
 
@@ -339,16 +335,6 @@ hr {
   margin: 0 200px 30px 200px;
 }
 
-.textprod-1, .textprod-2, .textprod-3, .textprod-4, .textprod-5 {
-  color: whitesmoke;
-  text-align: center;
-  height: 300px;
-  width: 300px;
-  text-transform: capitalize;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 50px;
-}
-
 h3 {
   color: whitesmoke;
   text-transform: capitalize;
@@ -356,9 +342,24 @@ h3 {
   margin: 20px;
 }
 
+.container-prod {
+  text-align: center;
+  padding: 50px;
+}
+
+.h3prod {
+  text-align: center;
+}
+
+.h3prod p {
+  text-align: center;
+  margin: 40px;
+  color: whitesmoke;
+}
+
 .imgprod-1 {
   background-image: url(./img/pic_alimentos.jpg);
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -367,7 +368,7 @@ h3 {
 
 .imgprod-2 {
   background-image: url(./img/pic_galletas2.jpg);
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -376,7 +377,7 @@ h3 {
 
 .imgprod-3 {
   background-image: url(./img/pic_golosinas.jpg);
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -385,7 +386,7 @@ h3 {
 
 .imgprod-4 {
   background-image: url(./img/pic_chocolates.jpg);
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -394,7 +395,7 @@ h3 {
 
 .imgprod-5 {
   background-image: url(./img/pic_helados2.jpg);
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -406,30 +407,6 @@ h3 {
     width: 100%;
     margin: 0;
     padding: 20px;
-  }
-  .container-prod {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .container-prod div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 30px;
   }
   .h3serv {
     width: 100%;
@@ -465,43 +442,14 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .container-prod {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .container-prod div {
-    margin: 100px;
-  }
+.textprod-1, .textprod-2, .textprod-3, .textprod-4, .textprod-5 {
+  color: whitesmoke;
+  padding: 10px;
+  text-align: center;
 }
 
-@media only screen and (min-width: 791px) and (max-width: 1900px) {
-  .container-prod {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .container-prod div {
-    width: 700px;
-    height: 300px;
-    margin: 50px;
-  }
+.textprod-5 {
+  text-align: center;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {

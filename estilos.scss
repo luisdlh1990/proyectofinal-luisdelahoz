@@ -19,9 +19,9 @@ $estilos:(
     font:20px,
     border:10px,
 );
-.adm:hover, h1:hover{
-    transform:rotatex(360deg);
-    transition: 2s;
+.adm:hover{
+    transform:rotatex(720deg);
+    transition: 3s;
 }
 *{
     padding: 0;
@@ -55,7 +55,7 @@ div ul li a{
 }
 a:hover{
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.5s;
     color: $color1;
     
 
@@ -115,7 +115,7 @@ h1 {
     margin: 30px 0 30px 0;
 }
 .text-qs, .text-nv,.text-nm{
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.678);
     color: $color1;
     text-transform: capitalize;
     width: 100%;
@@ -273,18 +273,14 @@ footer{
     text-transform: capitalize;
     padding: 10px;
 }
-.s-1:hover, .s-2:hover, .s-3:hover{
+.text-s:hover{
     transform: scale(1.05);
     transition: 1s;
 }
-
-.h3prod{
-    color: $color1;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: $font1;
+.container-serv{
     margin: 50px;
 }
+
 .h3serv{
     color: $color1;
     text-align: center;
@@ -298,24 +294,28 @@ hr{
     margin: 0 200px 30px 200px;
     
 }
-.textprod-1, .textprod-2, .textprod-3, .textprod-4, .textprod-5{
-    color: $color1;
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    text-transform: capitalize;
-    font-family: $font1;
-    padding-top: 50px;
-}
+
 h3{
     color: $color1;
     text-transform: capitalize;
     font-family: $font2;
     margin: 20px;
 }
+.container-prod{
+    text-align: center;
+    padding: 50px;
+}
+.h3prod{
+    text-align: center;
+    p{
+        text-align: center;
+        margin: 40px;
+        color: $color1;
+    }
+}
 .imgprod-1{
     background-image: url(./img/pic_alimentos.jpg);
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -323,7 +323,7 @@ h3{
 }
 .imgprod-2{
     background-image: url(./img/pic_galletas2.jpg);
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -331,7 +331,7 @@ h3{
 }
 .imgprod-3{
     background-image: url(./img/pic_golosinas.jpg);
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -339,7 +339,7 @@ h3{
 }
 .imgprod-4{
     background-image: url(./img/pic_chocolates.jpg);
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -347,7 +347,7 @@ h3{
 }
 .imgprod-5{
     background-image: url(./img/pic_helados2.jpg);
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -358,18 +358,6 @@ h3{
         width: 100%;
         margin: 0;
         padding: 20px;
-    }
-    .container-prod{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        div{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin: 30px;
-        }
     }
     .h3serv{
         width: 100%;
@@ -397,32 +385,13 @@ h3{
         }
     }
 }
-@media only screen and (min-width: 1280px){
-
-    .container-prod{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        div{
-            margin: 100px;
-        }
-    }
+.textprod-1, .textprod-2, .textprod-3, .textprod-4, .textprod-5{
+    color: $color1;
+    padding: 10px;
+    text-align: center;
 }
-@media only screen and (min-width: 791px) and (max-width: 1900px){
-
-
-    .container-prod{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        div{
-            width: 700px;
-            height: 300px;
-            margin: 50px;
-        }
-    }
-
+.textprod-5{
+    text-align: center;
 }
 @media only screen and (min-width: 320px) and (max-width: 500px){
     .page-footer{
